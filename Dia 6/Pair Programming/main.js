@@ -1,4 +1,4 @@
-var op = 0;
+op = 0;
 do {
   op = parseInt(prompt("Ingrese una opcion: \n 1. Sumar numeros \n 2. Ingresar Numeros y promediarlos \n 3. Ordenar 3 numeros de mayor a menor\n 0. Salir"));
   switch (op) {

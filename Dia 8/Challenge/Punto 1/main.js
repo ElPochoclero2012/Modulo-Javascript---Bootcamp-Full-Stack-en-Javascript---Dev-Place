@@ -9,7 +9,7 @@ class NIF{
 
     constructor(dni) {
         this.dni = dni;
-        letra = calcularLetra();
+        letra = leer();
     }
 
     leer(){
@@ -22,7 +22,7 @@ class NIF{
             alert("Introduzca un DNI:  ");
             dni = parseInt(prompt);
         }while(dni <= 0);
-        this.letra = calcularLetra();
+        this.letra = leer();
     }
 
     getDNI(){

@@ -46,31 +46,31 @@ function agregarDatos(){
     }
 }
 
-const eliminarContacto = (dni) => {
-    if(datos.length === 0){
-        alert("No hay nada en la agenda")
-    } else {
-        if(isNaN(dni)){
-            alert("El DNI debe ser un numero");
-        } else {
-            eliminarDatos(dni);
-        }
-    }
+// const eliminarContacto = (dni) => {
+//     if(datos.length === 0){
+//         alert("No hay nada en la agenda")
+//     } else {
+//         if(isNaN(dni)){
+//             alert("El DNI debe ser un numero");
+//         } else {
+//             eliminarDatos(dni);
+//         }
+//     }
 
-    renovarDatos();
-}
+//     renovarDatos();
+// }
 
-function eliminarDatos(dni){
-    let eleccionContacto = datosTotal.find((elemento) => elemento.dni === dni);
-    let indiceContacto = datosTotal.indexOf(eleccionContacto);
-    datosTotal.splice(indiceContacto, 1);
-}
+// function eliminarDatos(dni){
+//     let eleccionContacto = datosTotal.find((elemento) => elemento.dni === dni);
+//     let indiceContacto = datosTotal.indexOf(eleccionContacto);
+//     datosTotal.splice(indiceContacto, 1);
+// }
 
-function ordenarDatos(){
+// function ordenarDatos(){
     
-}
+// }
 
-const renovarDatos = () =>{
-    table.innerHTML = "";
+// const renovarDatos = () =>{
+//     table.innerHTML = "";
 
-}
+// }

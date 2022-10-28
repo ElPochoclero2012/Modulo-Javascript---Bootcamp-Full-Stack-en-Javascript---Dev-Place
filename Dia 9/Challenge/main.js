@@ -25,26 +25,31 @@ function datos(){
 
     agregarDatos();
 
-    eliminarDatos(dni);
 
 }
 
 var datosTotal = [];
 
-function agregarDatos(){
-    let contactoExiste = datosTotal.find(ele => ele.dni === dni);
-    if(contactoExiste){
-        if(typeof dniObtener === 'number' && typeof nombreObtener === 'string' && typeof telefonoObtener === 'number' && typeof edadObtener === 'number' && typeof paisObtener === 'string'){
-            datosTotal.push(personaNueva);
-            console.log(datosTotal);
-            document.getElementById("tabla").innerHTML += '<td>'+ personaNueva.nombre +'<td>'+ personaNueva.edad +'<td>'+   personaNueva.dni +'<td>'+ personaNueva.telefono + '<td>' + personaNueva.pais + '</td>';
-        } else {
-            alert("DNI, Numero, y Telefono deben ser numeros, Nombre y Pais deben ser textos");
-        } 
-        }else{
-        alert("Ya hay un contacto con ese mismo DNI ingresado en la tabla");
-    }
+function agregar(){
+    datosTotal.push(personaNueva);
+    console.log(datosTotal);
+    document.getElementById("tabla").innerHTML += '<td>'+ personaNueva.nombre +'<td>'+ personaNueva.edad +'<td>'+   personaNueva.dni +'<td>'+ personaNueva.telefono + '<td>' + personaNueva.pais + '</td>';
 }
+
+// function agregarDatos(){
+//     let contactoExiste = datosTotal.find(ele => ele.dni === dni);
+//     if(contactoExiste){
+//         if(typeof dniObtener === 'number' && typeof nombreObtener === 'string' && typeof telefonoObtener === 'number' && typeof edadObtener === 'number' && typeof paisObtener === 'string'){
+//             datosTotal.push(personaNueva);
+//             console.log(datosTotal);
+//             document.getElementById("tabla").innerHTML += '<td>'+ personaNueva.nombre +'<td>'+ personaNueva.edad +'<td>'+   personaNueva.dni +'<td>'+ personaNueva.telefono + '<td>' + personaNueva.pais + '</td>';
+//         } else {
+//             alert("DNI, Numero, y Telefono deben ser numeros, Nombre y Pais deben ser textos");
+//         } 
+//         }else{
+//         alert("Ya hay un contacto con ese mismo DNI ingresado en la tabla");
+//     }
+// }
 
 // const eliminarContacto = (dni) => {
 //     if(datos.length === 0){

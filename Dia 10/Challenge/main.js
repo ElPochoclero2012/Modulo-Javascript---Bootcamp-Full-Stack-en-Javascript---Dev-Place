@@ -68,7 +68,9 @@ class PersonalServicio extends Empleado{
     }
 }
 
-let lista = [];
+let listaAlumno = [];
+let listaProfe = [];
+let listaPersonal = [];
 
 let estudiante1 = new Estudiante('7° Fisica', 'Marcelo', 'Albano', '44336283', 'Soltero');
 
@@ -82,7 +84,14 @@ personal1.transladoSeccionPersonalServicio('Limpieza');
 
 estudiante1.matriculacionEstudianteNuevo('5°');
 
-lista.push(estudiante1, profesor1, personal1);
+listaAlumno.push(estudiante1);
 
-console.log(lista);
+listaProfe.push(profesor1);
 
+listaPersonal.push(personal1);
+
+console.table(listaAlumno);
+
+console.table(listaProfe);
+
+console.table(listaPersonal);

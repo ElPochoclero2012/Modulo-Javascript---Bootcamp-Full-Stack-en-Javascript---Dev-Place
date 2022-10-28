@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Completable</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Ingrese los usuarios que guste</h1>
+        <form action="">
+            <input id="nombre" type="text" placeholder="Ingrese nombre"></br></br>
+            <input id="edad" type="text" placeholder="Ingrese edad"></br></br>
+            <input id="telefono" type="text" placeholder="Ingrese telefono"></br></br>
+            <input id="dni" type="text" placeholder="Ingrese DNI"></br></br>
+            <input id="pais" type="text" placeholder="Ingrese País"></br></br>
+            <button id="boton" type="reset" onclick="datos();">Agregar</button>
+            <button id="borrar" type="reset" onclick="reset();">Borrar</button>
+        </form></br></br>
+        <div class="container">
+            <table class="table" id="tabla" BORDER="" width="50%">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Telefono</th>
+                        <th>DNI</th>
+                        <th>Pais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Marcelo</th>
+                        <th>20</th>
+                        <th>2235556666</th>
+                        <th>44336283</th>
+                        <th>Argentina</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <p>Ingrese el DNI del contacto que quiera eliminar:</p>
+            <form action="">
+                <input id="dni" type="text" placeholder="Ingrese DNI">
+                <button id="botonEliminar" type="reset" onclick="eliminarDatos();">Eliminar</button> 
+            </form></br>
+        </div>
+        <div>
+            <form action="">
+                <button id="botonOrden" type="reset" onclick="ordenarDatos();">Ordene sus datos</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

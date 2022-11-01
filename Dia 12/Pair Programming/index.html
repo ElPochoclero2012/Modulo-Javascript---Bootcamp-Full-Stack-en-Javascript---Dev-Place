@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabla Completable</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Ingrese los usuarios que guste</h1>
+        <form action="">
+            <input id="nombre" type="text" placeholder="Ingrese nombre"></br></br>
+            <input id="edad" type="number" placeholder="Ingrese edad"></br></br>
+            <input id="telefono" type="number" placeholder="Ingrese telefono"></br></br>
+            <input id="dni" type="number" placeholder="Ingrese DNI"></br></br>
+            <input id="pais" type="text" placeholder="Ingrese País"></br></br>
+            <button id="boton" type="reset" onclick="agregarDatos();">Agregar</button>
+            <button id="borrar" type="reset" onclick="reset();">Borrar</button>
+        </form></br></br>
+        <div>
+            <table class="table" BORDER="" width="50%">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Telefono</th>
+                        <th>DNI</th>
+                        <th>Pais</th>
+                        <th>X</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                </tbody>
+            </table>
+        </div>
+    </br></br>
+        <div>
+            <input id="busquedaDNI" type="text" placeholder="Ingrese DNI"></br>
+            <button id="botonBuscar" type="reset">Buscar</button>
+            <button id="botonEditar" type="reset">Editar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

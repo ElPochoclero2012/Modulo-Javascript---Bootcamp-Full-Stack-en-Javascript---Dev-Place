@@ -24,8 +24,7 @@ const palabras = [
 let guiones = [];
 const etapas= ["img/Fase7.png", "img/Fase6.png", "img/Fase5.png", "img/Fase4.png", "img/Fase3.png", "img/Fase2.png", "img/Fase1.png"];
 
-
-let pantalla = document.querySelector('.juego');
+let pantalla = document.querySelector('.Seccion');
 let juegoLetras = document.querySelector('.juego-letras');
 let intentos = document.querySelector('.intentos')
 let ahorcado = document.querySelector('.juego-img');
@@ -52,7 +51,6 @@ function borrarPantalla(){
     intentos.innerHTML = " ";
 }
 
-
 botonPista.onclick = () => {
     pista.textContent = palabraAJugar.pista;
 }
@@ -75,8 +73,8 @@ botonesLetras.forEach( (btn) =>{
 
     }else{
         intentosQueQuedan --;
-        intentos.innerHTML = 'Quedan '+ intentosQueQuedan + ' intentos';
-        ahorcado.setAttribute('src', etapas[intentosQueQuedan])
+        intentos.innerHTML = 'Quedan '+ intentosQueQuedan +' intentos';
+        ahorcado.setAttribute('src', etapas[intentosQueQuedan]);
         comprobarIntentos();
     }    
     }

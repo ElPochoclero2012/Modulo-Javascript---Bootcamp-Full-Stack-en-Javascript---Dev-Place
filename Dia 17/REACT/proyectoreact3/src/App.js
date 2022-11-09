@@ -44,12 +44,6 @@ function App() {
     <header>
       <NavBar setCategoria = {setCategoria} />
     </header>
-      {/*<BtnFecha />
-      <h1>Soy el padre</h1>
-      <Hijo1 />
-      <Productos1 />
-      <Productos2 />
-      <Productos3 /> */}
       {variable}
       <Footer />
     </>

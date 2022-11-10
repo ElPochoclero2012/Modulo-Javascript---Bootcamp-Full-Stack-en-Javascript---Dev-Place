@@ -14,26 +14,26 @@ function App() {
   const [categoria, setCategoria] = useState("Buso"); 
   console.log(categoria);
 
-  let variable;
+  let renderizar;
 
   switch(categoria){
     case "Buso":
-        variable = <Productos2 />
+      renderizar = <Productos2 />
       break;
     case "Pantalon": 
-        variable = <Productos1 />
+      renderizar = <Productos1 />
       break;
     case "Remera":
-        variable = <Productos3 />
+      renderizar = <Productos3 />
       break;
     case "Hijos":
-        variable = <Hijo0 />
+      renderizar = <Hijo0 />
       break;
     case "Hora":
-        variable = <BtnFecha />
+      renderizar = <BtnFecha />
       break;
     case "Resumen":
-        variable = <BtnResumen />
+      renderizar = <BtnResumen />
       break;
     default:
       break;
@@ -44,7 +44,7 @@ function App() {
     <header>
       <NavBar setCategoria = {setCategoria} />
     </header>
-      {variable}
+      {renderizar}
       <Footer />
     </>
   );

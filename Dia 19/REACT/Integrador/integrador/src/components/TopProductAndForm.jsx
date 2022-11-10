@@ -6,13 +6,13 @@ function TopProductAndForm() {
        <div class="flex-container">
 
 <div class="flex-child magenta">
-  Flex Column 1
+    Selected product
 </div>
 
 <div class="flex-child green">
-  Flex Column 2
+  
 </div>
-
+    Form for contact
 </div>
     </>
   )

@@ -8,7 +8,7 @@ function CarouselOffers() {
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="https://media2.giphy.com/media/vMmnJti6wQPDy/giphy.gif"
+        src="https://1.bp.blogspot.com/-cEEpysNJBak/XwiUiNmCB-I/AAAAAAAAlX8/rkaUtAmRd2Yv3ng1DdpsNIkl82YeDBlJACNcBGAsYHQ/s1600/Firewatch%2Bwallpaper.png"
         alt="First slide"
       />
       <Carousel.Caption>
@@ -19,7 +19,7 @@ function CarouselOffers() {
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="https://media.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Yume_Nikki_Logo.svg/1200px-Yume_Nikki_Logo.svg.png"
         alt="Second slide"
       />
 
@@ -31,7 +31,7 @@ function CarouselOffers() {
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="https://i.kym-cdn.com/entries/icons/original/000/040/491/cover10.jpg"
+        src="https://cdn.akamai.steamstatic.com/steam/apps/1604000/capsule_616x353.jpg?t=1658165566"
         alt="Third slide"
       />
 

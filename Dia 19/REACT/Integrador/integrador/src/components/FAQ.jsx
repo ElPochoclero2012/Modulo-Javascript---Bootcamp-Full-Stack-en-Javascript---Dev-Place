@@ -11,14 +11,16 @@ function FAQ() {
   return (
     <>
     <h1 className="Title">FAQ (Frequently Asked Questions)</h1>
-    <card>
+    
     <Accordion>
+      <card>
       <Accordion.Item eventKey="0">
         <Accordion.Header>What are the Payment Methods?</Accordion.Header>
         <Accordion.Body>
           Any card in the universe!
         </Accordion.Body>
       </Accordion.Item>
+      </card>
       <Accordion.Item eventKey="1">
         <Accordion.Header>How long does the shipment take?</Accordion.Header>
         <Accordion.Body>
@@ -32,7 +34,7 @@ function FAQ() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-    </card>
+  
     </>
   )
 }

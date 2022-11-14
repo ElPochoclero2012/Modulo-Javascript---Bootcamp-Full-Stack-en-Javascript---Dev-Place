@@ -1,12 +1,8 @@
 import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import { Container } from "react-bootstrap";
 
-function TopProductAndForm() {
+function Register() {
 
     const [inputs, setInputs] = useState({});
 
@@ -22,29 +18,18 @@ function TopProductAndForm() {
     }
 
 
-
   return (
-    <>
-    <Row className="TopProductAndForm">
-      <Col className="topProduct">
 
-          <Col>
-            <Row><img src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/4X2RHHKPDBDRFPD6AKE7T6IMZ4.jpeg" width="100%"/></Row>
-          </Col>
-          <Col>
-            <h1>FREE FOR LIMITED TIME</h1>
-            <p>The famous WARHAMMER: VERMINTIDE 2 is FREE on STEAM right now!</p>
-            <Button variant="success">Go to site</Button>
-          </Col>
-          
-      </Col>
+    <Form className="RegisterForm" onSubmit={handleSubmit}>
 
-      <Col className="Form">
-      <Form className="FormStyle" onSubmit={handleSubmit}>
         <p className="Title">Not a member? </p><p className="Title">Sign up!</p>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" name="username" value={inputs.username || ""} onChange={handleChange} placeholder="Enter name" />
+          <Form.Control type="text" name="realname" value={inputs.realname || ""} onChange={handleChange} placeholder="Enter name" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Username</Form.Label>
+          <Form.Control type="text" name="username" value={inputs.username || ""} onChange={handleChange} placeholder="Enter username" />
         </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -73,11 +58,9 @@ function TopProductAndForm() {
       <Button variant="success" type="submit" className="SignUpButton">
         Sign up
       </Button>
+      
       </Form>
-      </Col>
-      </Row>
-    </>
-  );
+  )
 }
 
-export default TopProductAndForm;
+export default Register

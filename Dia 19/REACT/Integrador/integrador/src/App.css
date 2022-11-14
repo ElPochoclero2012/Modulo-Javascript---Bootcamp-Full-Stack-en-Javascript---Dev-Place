@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -130,25 +134,29 @@ li .aHover:hover:not(.active) {
   background-color: rgb(2, 99, 7);
 }
 
-.card-container {
+.Cards {
   display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 30vw;
 }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 3);
-  background-color: white;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+.Cards .eitherCard {
+  margin: 2px;
+}
+.Cards .eitherCard .card {
+  width: 10vw;
+  height: 20vw;
+}
+.Cards .eitherCard .card #buyButton {
+  display: flex !important;
+  justify-content: center !important;
+}
+.Cards .eitherCard .card .cardImage {
+  width: 10vw;
+  height: 10vw;
 }
 
 .Title {
   display: flex;
   justify-content: center;
+  margin-top: 1vw;
 }
 
 .imagen {
@@ -163,7 +171,12 @@ li .aHover:hover:not(.active) {
 
 .container-fluid {
   display: flex !important;
-  justify-content: space-around !important;
+  justify-content: space-between !important;
+}
+
+.loginButton {
+  display: flex !important;
+  justify-content: end !important;
 }
 
 .flex-container {
@@ -172,10 +185,109 @@ li .aHover:hover:not(.active) {
 
 .flex-child {
   flex: 1;
+  display: flex;
+  height: 15vw;
+  background-color: rgba(170, 170, 170, 0.781);
+  box-shadow: 1px 1px 1px 1px;
+}
+.flex-child h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .flex-child:first-child {
   margin-right: 20px;
+}
+
+.d-block {
+  height: 35vw;
+  margin-bottom: 2vw;
+}
+
+.AccordionFAQ {
+  margin-top: 1vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.TopProductAndForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vw;
+}
+
+.topProduct {
+  box-shadow: 5px 5px 30px rgb(224, 223, 223);
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+.navbar-expand-lg {
+  flex-wrap: wrap !important;
+}
+
+.searchBar {
+  display: flex !important;
+  flex-basis: auto !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+}
+
+.Form {
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 30px rgb(224, 223, 223);
+  margin: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.RegisterForm {
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 30px rgb(224, 223, 223);
+  margin: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 2rem;
+}
+
+.LogInForm {
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 30px rgb(224, 223, 223);
+  margin: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 1vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 2rem;
+}
+
+.AccordionFAQ {
+  box-shadow: 5px 5px 30px rgb(224, 223, 223);
+}
+
+.SignUpButton {
+  display: flex;
+  justify-content: center;
+}
+
+.cardCarousel {
+  display: flex !important;
+  justify-content: center !important;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -14,8 +14,8 @@ function NavBarDown() {
     <Navbar bg="light" expand="lg">
       <Container fluid>
       <NavDropdown title="Category" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Physical</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="/Physical">Physical</NavDropdown.Item>
+              <NavDropdown.Item href="/Digital">
                 Digital
               </NavDropdown.Item>
             </NavDropdown>
@@ -25,9 +25,7 @@ function NavBarDown() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Offers</Nav.Link>
-            <Nav.Link href="#action2">History</Nav.Link>
-            <Nav.Link href="#action2">Help</Nav.Link>
+            <Nav.Link href="/help">Help</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

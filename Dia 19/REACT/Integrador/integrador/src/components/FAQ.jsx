@@ -1,18 +1,14 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 
-// const questionList = [
-//   { question: "¿What are the payment methods?", answer: "You can use all the cards in existence"},
-//   { question: "¿How long does the shipment take?", answer: "3 to 5 business day"},
-//   { question: "¿Is there a refund?", answer: "Of course! Just contact us."}
-// ];
+
 
 function FAQ() {
   return (
     <>
     <h1 className="Title">FAQ (Frequently Asked Questions)</h1>
     
-    <Accordion>
+    <Accordion className="AccordionFAQ">
       <card>
       <Accordion.Item eventKey="0">
         <Accordion.Header>What are the Payment Methods?</Accordion.Header>

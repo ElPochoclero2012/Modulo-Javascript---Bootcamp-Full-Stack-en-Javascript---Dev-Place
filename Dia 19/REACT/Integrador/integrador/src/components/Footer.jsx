@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
     return(
         <footer>
-            <a><p>Trabajá con nosotros</p><p>Términos y condiciones</p></a>
+            <a><p>Work with us!    ///     Terms and conditions</p></a>
         </footer>
     );
 };

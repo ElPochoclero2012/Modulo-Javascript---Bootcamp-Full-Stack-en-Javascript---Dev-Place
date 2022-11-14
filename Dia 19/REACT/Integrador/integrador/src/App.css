@@ -198,6 +198,11 @@ li .aHover:hover:not(.active) {
   margin-right: 20px;
 }
 
+#WIP {
+  display: flex;
+  justify-content: center;
+}
+
 .d-block {
   height: 35vw;
   margin-bottom: 2vw;

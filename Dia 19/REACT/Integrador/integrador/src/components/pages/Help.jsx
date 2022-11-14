@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Digital() {
+function Help() {
   return (
     <section id="WIP">
         <img src="https://cdn-icons-png.flaticon.com/512/5578/5578536.png"/>
@@ -8,4 +8,4 @@ function Digital() {
   )
 }
 
-export default Digital
+export default Help

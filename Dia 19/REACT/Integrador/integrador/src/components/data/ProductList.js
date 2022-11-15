@@ -1,18 +1,21 @@
 let arrayProducts = [
     {
         type: "Digital",
+        category: "Action",
         name: "God of War: Ragnarök",
         price: "$43.99",
         image: "https://d3ugyf2ht6aenh.cloudfront.net/stores/082/436/products/god-of-war-ragnarok1-b987891cd2ce74133216579078912230-480-0.jpg"
     },
     {
         type: "Digital",
+        category: "Action",
         name: "Among Us",
         price: "$4.99",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4tdljEkq26iDOTEfQHPYQ5tQci4ChA-jUw&usqp=CAU"
     },
     {
         type: "Digital",
+        category: "Action",
         name: "Super Hexagon",
         price: "$2.50",
         image: "https://m.media-amazon.com/images/M/MV5BYzg5M2I1MmItOTdlNi00ZTMzLWFkZjYtZGI3ODNkMWNkZGIwXkEyXkFqcGdeQXVyMTk5NDI0MA@@._V1_FMjpg_UX1000_.jpg"

@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { Container } from "react-bootstrap";
+import { Alert, Container } from "react-bootstrap";
 
 function TopProductAndForm() {
 
@@ -18,10 +18,11 @@ function TopProductAndForm() {
 
     const handleSubmit = (e) => {
       e.preventDefault();
+      if(e.target.value.inputs.username == "" || e.target.value.inputs.email == "" || e.target.value.inputs.password == "" || e.target.value.inputs.phoneNumber == ""){
+        Alert("Falta ingresar algun dato");
+      }
       console.log(inputs);
     }
-
-
 
   return (
     <>
@@ -42,10 +43,12 @@ function TopProductAndForm() {
       <Col className="Form">
       <Form className="FormStyle" onSubmit={handleSubmit}>
         <p className="Title">Not a member? </p><p className="Title">Sign up!</p>
+
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" name="username" value={inputs.username || ""} onChange={handleChange} placeholder="Enter name" />
         </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" name="email" value={inputs.email || ""} onChange={handleChange} placeholder="Enter email" />
@@ -69,10 +72,15 @@ function TopProductAndForm() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Suscribe for Newspaper" />
       </Form.Group>
-      
+      <Row>
+
+
+
       <Button variant="success" type="submit" className="SignUpButton">
         Sign up
       </Button>
+
+      </Row>
       </Form>
       </Col>
       </Row>

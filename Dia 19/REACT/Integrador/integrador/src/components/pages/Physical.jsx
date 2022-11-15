@@ -1,10 +1,25 @@
 import React from 'react'
+import arrayProducts from "../data/ProductList";
+import Product from '../Product';
 
 function Physical() {
+
   return (
-    <section id="WIP">
-        <img src="https://cdn-icons-png.flaticon.com/512/5578/5578536.png"/>
-    </section>
+    <>
+    <h1 className="Title">Physical games</h1>
+    <div className="CategoryShowcase">
+
+    {arrayProducts.map((e, key)=>
+    {
+      if(e.type == "Physical")
+      {
+        return(
+          <Product element={e} key={key}/>
+        )
+      }
+    })}
+    </div>
+    </>
   )
 }
 

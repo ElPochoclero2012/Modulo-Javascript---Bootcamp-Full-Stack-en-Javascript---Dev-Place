@@ -9,6 +9,8 @@ import Register from './components/pages/Register';
 import Physical from './components/pages/Physical';
 import Digital from './components/pages/Digital';
 import Help from './components/pages/Help';
+import Search from './components/pages/Search';
+import Cart from './components/pages/Cart';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -53,17 +55,14 @@ function App() {
  
       <BrowserRouter>
         <Routes>
-          <Route path="/Homepage" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Physical" element={<Physical />} />
           <Route path="/Digital" element={<Digital />} /> 
           <Route path="/Help" element={<Help />} />
-          {/* <Route path="/Login" element={<Login /> } />
-          <Route path="/Register" element={<Register /> } />
-          <Route path="/Physical" element={<Physical /> } />
-          <Route path="/Digital" element={<Digital /> } /> */}
-          {/* <Route path="/general" element={<General />} /> */}
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Search" element={<Search />} />
         </Routes>
       </BrowserRouter> 
 

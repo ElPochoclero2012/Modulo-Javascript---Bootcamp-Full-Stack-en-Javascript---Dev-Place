@@ -23,7 +23,7 @@ function Login() {
 
     <Form className="LogInForm" onSubmit={handleSubmit}>
       <p className="Title">Log in!</p>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicEmail" >
         <Form.Label>Email address</Form.Label>
         <Form.Control
           type="email"
@@ -31,6 +31,7 @@ function Login() {
           value={inputs.email || ""}
           onChange={handleChange}
           placeholder="Enter email"
+          required
         />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
@@ -45,6 +46,7 @@ function Login() {
           value={inputs.password || ""}
           onChange={handleChange}
           placeholder="Password"
+          required
         />
       </Form.Group>
 

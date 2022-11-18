@@ -5,9 +5,8 @@ import CarouselOffers from './Carousel';
 import Products from './Products';
 import FAQ from './FAQ';
 import TopProductAndForm from './TopProductAndForm';
+import { CartProvider } from "react-use-cart";
 
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Homepage() {
@@ -15,16 +14,17 @@ function Homepage() {
 
   return (
     <>
+      <CartProvider>
 
+        <CarouselOffers />
 
-      <CarouselOffers />
+        <Products />
 
-      <Products />
+        <FAQ />
 
-      <FAQ />
+        <TopProductAndForm /> 
 
-      <TopProductAndForm /> 
-
+      </CartProvider>
     </>
   );
 }

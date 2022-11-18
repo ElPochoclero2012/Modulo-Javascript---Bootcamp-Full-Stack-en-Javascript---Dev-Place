@@ -23,7 +23,6 @@ function NavBarDown() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/Help">Help</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

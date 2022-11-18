@@ -8,9 +8,10 @@ import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import Physical from './components/pages/Physical';
 import Digital from './components/pages/Digital';
-import Help from './components/pages/Help';
 import Search from './components/pages/Search';
 import Cart from './components/pages/Cart';
+import Checkout from './components/pages/Checkout';
+import { CartProvider } from 'react-use-cart';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,13 +47,14 @@ function App() {
 
   return (
     <>
+    <CartProvider>
       <header>
         {/* <NavBar setCategory = {setCategory} /> */}
         <NavBar />
         <NavBarDown />
       </header>
       {/* {render} */}
- 
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -60,12 +62,12 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Physical" element={<Physical />} />
           <Route path="/Digital" element={<Digital />} /> 
-          <Route path="/Help" element={<Help />} />
           <Route path="/Cart" element={<Cart />} />
-          <Route path="/Search" element={<Search />} />
+          <Route path="/Cart/Checkout" element={<Checkout />} />
+          <Route path="/Search/:filter" element={<Search />} />
         </Routes>
       </BrowserRouter> 
-
+ 
        {/* <CarouselOffers />
 
       <Products />
@@ -79,7 +81,10 @@ function App() {
       
       <BuyForms />
        */}
+
       <Footer />
+
+      </CartProvider>
     </>
   );
 }

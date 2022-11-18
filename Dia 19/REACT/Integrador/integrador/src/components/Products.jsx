@@ -1,8 +1,8 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel';
 import arrayProducts from "./data/ProductList";
 import Product from "./Product";
-
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -23,7 +23,7 @@ function Products() {
         return (
           <> 
       <Swiper
-        slidesPerView={5}
+        slidesPerView={6}
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -32,18 +32,25 @@ function Products() {
         modules={[Pagination]}
         className="mySwiper"
       >
+        <section className="Cards">
 
         {arrayProducts.map((e, index)=>{
           
 
             return (
+
               <SwiperSlide className="cardCarousel">
+                 
               <Product element={e} index={index}/>
+               
               </SwiperSlide>
+
             )
 
         })} 
-        
+
+
+        </section>
       </Swiper>
 
 

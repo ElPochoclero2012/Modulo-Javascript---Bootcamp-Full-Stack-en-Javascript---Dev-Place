@@ -1,33 +1,33 @@
 import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button';
-import Counter from './Counter';
+import { useCart } from 'react-use-cart';
+// import Button from 'react-bootstrap/Button';
+// import ButtonItems from './ButtonItems';
+
 
 //card individual
 
-function Product(props){
+const Product = (props) => {
 
-
-
-
+    const { addItem } = useCart();
 
     return(
-        <section className="Cards">
+
             
-                <div className="eitherCard">
+
                     <div className="card" key={props.index}>
                         <img src={props.element.image} className="cardImage"></img>
                         <h4><b>{props.element.name}</b></h4>
-                            <p>{props.element.price}</p>
-                            <Counter />
-                        <div className="container">
+                            <p>${props.element.price}</p>
+                            <button className="btn btn-success" onClick={() => addItem(props.element)}>Add to Cart</button>
+                        {/* <div className="container"> */}
                             {/* <h4><b>{props.element.name}</b></h4>
                             <p>{props.element.price}</p>
                             <Button variant="success" id="buyButton">Add to cart</Button> */}
-                        </div>
+                        {/* </div> */}
                     </div>
-                </div> 
+
             
-        </section>
+
 
 
         

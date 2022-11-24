@@ -11,7 +11,7 @@ const getUserById = async (req, res) => {
     User.findById(id).then((data) => {
         res.json(data);
     }).catch(() => {
-        res.status(404).json("ITEM not found ...");
+        res.status(404).json("USER not found ...");
     })
 }
 
@@ -24,15 +24,15 @@ const createUser = async (req, res) =>{
 
 const updateUser = async (req, res) =>{
     const { id } = req.params;
-    await User.updateOne({id : id}, req.body);
-    res.json("Producto actualizado ...");
+    await User.updateOne({_id : id}, req.body);
+    res.json("Usuario actualizado ...");
  
 }
 
 const deleteUser = async (req, res) =>{
     const { id } = req.params;
-    await User.remove({id : id});
-    res.json("Producto eliminado ...");
+    await User.remove({_id : id});
+    res.json("Usuario eliminado ...");
 }
 
 module.exports = {

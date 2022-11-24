@@ -24,14 +24,14 @@ const createProduct = async (req, res) =>{
 
 const updateProduct = async (req, res) =>{
     const { id } = req.params;
-    await Product.updateOne({id : id}, req.body);
+    await Product.updateOne({_id : id}, req.body);
     res.json("Producto actualizado ...");
  
 }
 
 const deleteProduct = async (req, res) =>{
     const { id } = req.params;
-    await Product.remove({id : id});
+    await Product.remove({_id : id});
     res.json("Producto eliminado ...");
 }
 

@@ -7,7 +7,7 @@ function Digital() {
     <>
     <h1 className="Title">Digital games</h1>    
     
-    <div className="CategoryShowcase">
+    <div className="Cards">
 
     {arrayProducts.map((e, key)=>
       {

@@ -68,7 +68,15 @@ let arrayProducts = [
         name: "Metal Gear Solid 3: Snake Eater",
         price: "15",
         image: "https://http2.mlstatic.com/D_NQ_NP_640629-MLB42364912596_062020-O.jpg"
+    },
+    {
+        id: 11,
+        type: "Physical",
+        name: "Hannah Montana DS",
+        price: "10",
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/HannahMontanaVideoGame1.jpg/220px-HannahMontanaVideoGame1.jpg"
     }
+
 ];
 
 export default arrayProducts;

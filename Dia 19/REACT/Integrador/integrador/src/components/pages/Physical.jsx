@@ -7,7 +7,7 @@ function Physical() {
   return (
     <>
     <h1 className="Title">Physical games</h1>
-    <div className="CategoryShowcase">
+    <div className="Cards">
 
     {arrayProducts.map((e, key)=>
     {

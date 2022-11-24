@@ -11,21 +11,21 @@ function Search() {
 
   return (
     <>
-        <section className="Cards">
+      <section className="Cards">
         <div className="containerCards">
         <Row>
-    {arrayProducts.map((element, index) =>{
-      if(element.name.toLowerCase().includes(filter)){
-        return(
-          <Col lg={4} sm={12} xl={2}>
-          <Product element={element} index={index} />
-          </Col>
-        )
-      }
-    })}
+          {arrayProducts.map((element, index) =>{
+            if(element.name.toLowerCase().includes(filter)){
+              return(
+                <Col lg={4} sm={12} xl={2}>
+                <Product element={element} index={index} />
+                </Col>
+              )
+            }
+          })}
 
-    </Row>
-    </div>
+        </Row>
+      </div>
     </section>  
     </>
   )

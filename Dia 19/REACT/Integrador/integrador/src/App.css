@@ -348,11 +348,6 @@ li .aHover:hover:not(.active) {
   text-align: center !important;
 }
 
-.CategoryShowcase {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
